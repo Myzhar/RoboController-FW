@@ -40,12 +40,6 @@ unsigned char Ver[] = "RoboController Test V1.0 Mauro Soligo 2011"; // 42+1 char
 #include "var.h"
 #include "macro.h"
 
-
-//unsigned int TestBreakpoint;
-//float a,b,c,d;
-//long int Valori[1000];
-//unsigned int IndiceValori = 0;
-
 int main(int argc, char** argv)
 {
     unsigned int test;
