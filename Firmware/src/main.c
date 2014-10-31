@@ -225,12 +225,9 @@ void GestioneSetpoint(void)
         /* ************ SONO IN MODALITA' PID, ROUTINE "MAIN"  ************ */
         /* **************************************************************** */
         // Converto Vlineare in Giri al secondo per il PID
-//        Setpoint_M1 = Motore1.FL_Costante_Conversione_Vlin_to_Vang * (2048+500);
-//        Setpoint_M2 = Motore2.FL_Costante_Conversione_Vlin_to_Vang * (2048-500);
 //
 //        Setpoint_M1 = 1600; //Motore1.FL_Costante_Conversione_Vlin_to_Vang * ((float) VarModbus[INDICE_PWM_CH1]);
 //        Setpoint_M2 = 1600; //Motore2.FL_Costante_Conversione_Vlin_to_Vang * ((float) VarModbus[INDICE_PWM_CH2]);
-
 
         Setpoint_M1 = Motore1.FL_Costante_Conversione_Vlin_to_Vang * ((float)((int)VarModbus[INDICE_PWM_CH1]));
         Setpoint_M2 = Motore2.FL_Costante_Conversione_Vlin_to_Vang * ((float)((int)VarModbus[INDICE_PWM_CH2]));
